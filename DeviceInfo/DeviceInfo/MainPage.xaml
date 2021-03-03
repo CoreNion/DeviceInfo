@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeviceInfo"
+             x:Class="DeviceInfo.MainPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+    
+    <NavigationPage Title="Overview" IconImageSource="Sumaho.png">
+        <x:Arguments>
+            <local:Overview IconImageSource="Sumaho.png" />
+        </x:Arguments>        
+    </NavigationPage>
+
+    <NavigationPage Title="SoC Infomation" IconImageSource="Chip.png">
+        <x:Arguments>
+            <local:SoCInfo IconImageSource="Chip.png" />
+        </x:Arguments>        
+    </NavigationPage>
+</TabbedPage>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeviceInfo.Overview"
+             Title="Overview">
+
+    <ScrollView>
+
+        <StackLayout VerticalOptions="Fill" Padding="3,0,0,0">
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Model Name" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="ModelName"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Model Number" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="ModelNumber"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Label Text="OS Version" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="OSVersion"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Label Text="Resolution" />
+                <Label Text="Width Size" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <Label x:Name="ScreenWSize"
+                           FontSize="Large"
+                           FontAttributes="Bold" />
+                </ContentView>
+
+                <Label Text="HeightSize" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <Label x:Name="ScreenHSize"
+                           FontSize="Large"
+                           FontAttributes="Bold"/>
+                </ContentView>
+
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Board Name" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <Label x:Name="BoardName"
+                           FontSize="Large"
+                           FontAttributes="Bold" />
+                </ContentView>
+
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Kernel Version" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <Label x:Name="KernVersion"
+                           FontSize="Large"
+                       FontAttributes="Bold" />
+                </ContentView>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

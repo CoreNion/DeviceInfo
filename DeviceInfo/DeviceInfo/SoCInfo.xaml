@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeviceInfo.SoCInfo"
+             Title="SoC Infomation">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="Fill">
+
+            <!--CPU Name-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="CPU Name" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="CPUName"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <!--CPU Architecture-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="CPU Architecture" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="CPUArch"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <!--Cores-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Cores" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="CPUCores"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <!--Chip ID-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Chip ID" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="ChipID"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <!--Total Memory-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Total Memory" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="TotalMemory"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+            <!--GPU Name-->
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="GPU Name" />
+                <ContentView Padding="50, 0, 0, 0">
+                    <ContentView.Content>
+                        <Label x:Name="GPUName"
+                     FontSize="Large"
+                     FontAttributes="Bold" />
+                    </ContentView.Content>
+                </ContentView>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>
