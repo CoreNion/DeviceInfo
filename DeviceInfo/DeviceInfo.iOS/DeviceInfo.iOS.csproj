@@ -29,9 +29,10 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
-    <CodesignKey>Apple Development: coreinion@gmail.com (F7KU5P4K48)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchArch>x86_64</MtouchArch>
-    <CodesignProvision>iOS Team Provisioning Profile: com.CoreNion.DeviceInfo</CodesignProvision>
+    <CodesignProvision>
+    </CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -61,6 +62,8 @@
     <CodesignProvision>
     </CodesignProvision>
     <OptimizePNGs>false</OptimizePNGs>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -87,15 +90,16 @@
     <None Include="GetiOSModel.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="GetiOSModel, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\GetiOSModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
-    <Reference Include="GetiOSModel">
-      <HintPath>GetiOSModel.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
@@ -189,7 +193,7 @@
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarDeviceInfoiOSHideInfoBar="True" TriggeredFromHotReload="False" />
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadWrongLinkerErrorInfoBarDeviceInfoiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
