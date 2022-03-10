@@ -96,6 +96,12 @@ namespace DeviceInfo.iOS
                 return "A15 Bionic";
             else if (chipid == "t8103")
                 return "M1";
+            else if (chipid == "t6000")
+                return "M1 Pro";
+            else if (chipid == "t6001")
+                return "M1 Max";
+            else if (chipid == "t6002")
+                return "M1 Ultra";
             else return "Unknown";
         }
 
